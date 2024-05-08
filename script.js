@@ -5,7 +5,6 @@ let data;
 var theme = null // Sætter variablen til ingenting
 var explanation = "Korrekt svar:" // Sætter variablen til ingenting
 var image = null // Sætter variablen til ingenting
-let show = 0;
 
 function next() {
   var pic;
