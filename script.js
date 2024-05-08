@@ -37,13 +37,7 @@ function reveal(){
 }
 
 function hasLearned(){
-  if (show == 0) {
-    document.getElementById('choose').innerHTML = listWithLearned; // Returnere information til HTML og "variablen" "valg"
-    show = 1
-  } else {
-    document.getElementById('choose').innerHTML = null; // Returnere information til HTML og "variablen" "valg"
-    show = 0
-  }
+  document.getElementById('choose').innerHTML = listWithLearned; // Returnere information til HTML og "variablen" "valg"
 }
 
 function findText(x){
