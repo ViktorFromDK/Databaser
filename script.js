@@ -5,7 +5,6 @@ let data;
 var theme = null // Sætter variablen til ingenting
 var explanation = "Korrekt svar:" // Sætter variablen til ingenting
 var image = null // Sætter variablen til ingenting
-let show = 0;
 
 function next() {
   var pic;
@@ -21,9 +20,7 @@ function next() {
 function learned() {
   listLearnedNumber.push(x)
   listWithLearned.push(" "+image) // Tilføjer overskriften som det sidste i listen med variable
-  if (show == 1) {
-    document.getElementById('choose').innerHTML = listWithLearned; // Returnere information til HTML og "variablen" "valg"
-  }
+  document.getElementById('choose').innerHTML = "Lærte begreber: " + listWithLearned; // Returnere information til HTML og "variablen" "valg"
 }
 
 function FindNew() {
@@ -37,11 +34,6 @@ function FindNew() {
 
 function reveal(){
   document.getElementById('explanation').innerHTML = "Korrekt svar: "+beskrivelse; // Returnere information til HTML og "variablen" "beskrivelse"
-}
-
-function hasLearned(){
-  document.getElementById('choose').innerHTML = listWithLearned; // Returnere information til HTML og "variablen" "valg"
-  show = 1
 }
 
 function findText(x){
